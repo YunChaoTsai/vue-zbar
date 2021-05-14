@@ -9,7 +9,7 @@ function handleSuccessWithVideo(video: HTMLVideoElement) {
   };
 }
 
-function handleError(error: any) {
+function handleError(error: Error) {
   console.log(
     "navigator.MediaDevices.getUserMedia error: ",
     error.message,
@@ -17,7 +17,7 @@ function handleError(error: any) {
   );
 }
 
-export const videoStream = (video: HTMLVideoElement) => {
+export const videoStream = (video: HTMLVideoElement): void => {
   const handleSuccess = handleSuccessWithVideo(video);
   navigator.mediaDevices
     .getUserMedia(constraints)
