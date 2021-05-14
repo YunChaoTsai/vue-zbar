@@ -10880,3 +10880,8 @@ yorkie@^2.0.0:
     is-ci "^1.0.10"
     normalize-path "^1.0.0"
     strip-indent "^2.0.0"
+
+zbar.wasm@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/zbar.wasm/-/zbar.wasm-2.0.3.tgz#0e6c954c92e8bc5fba67892600544ba8c3126b85"
+  integrity sha512-kpdc9S4rSO9fxtuShJQMNFYDcT+sA399oXBoWfPtUvfl1ytxrVs/2aklfrBsxmFPcvrFejLb3ZlwrubTNb17xg==
