@@ -1,7 +1,7 @@
 <template>
   <div>
-    <video playsInline autoPlay :ref="videoRef" />
-    <canvas :ref="canvasRef" />
+    <video playsInline autoPlay ref="videoRef" />
+    <canvas ref="canvasRef" />
   </div>
 </template>
 
@@ -49,6 +49,9 @@ export default defineComponent({
     };
 
     onMounted(() => {
+      console.log(videoRef.value);
+      console.log(canvasRef.value);
+
       if (videoRef.value && canvasRef.value) {
         videoStream(videoRef.value);
 
